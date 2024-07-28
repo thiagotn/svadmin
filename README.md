@@ -43,4 +43,4 @@ You can preview the production build with `npm run preview`.
 |---|---|---|
 | 1 | Pipeline Github Actions  | ✓ |
 | 2 | Docker Image/Push  | ✓ |
-| 3 | Teams notification  |  TODO |
+| 3 | [Teams notification](https://github.com/marketplace/actions/notify-microsoft-teams)  |  TODO |
