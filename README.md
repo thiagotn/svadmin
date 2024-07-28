@@ -38,3 +38,9 @@ You can preview the production build with `npm run preview`.
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
 
 ## TODO
+
+| Id | Item  | Status  |
+|---|---|---|
+| 1 | Pipeline Github Actions  | ✓ |
+| 2 | Docker Image/Push  | ✓ |
+| 3 | Teams notification  |  TODO |
