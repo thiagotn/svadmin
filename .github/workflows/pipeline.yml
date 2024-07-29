@@ -51,7 +51,7 @@ jobs:
       uses: martinbeentjes/npm-get-version-action@v1.3.1
 
     - name: Echo Current Version
-      run: echo "Current Version"
+    - run: echo "Current Version"
 
     #- name: Update Version in Deployment and Readme
     #env:
