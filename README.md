@@ -1,18 +1,16 @@
 # create-svelte
 
+<p align="left">
+  <a href="https://svadmin.io">
+    <img alt="Current version badge" src="https://shields.io/badge/production-0.0.3-green">
+  </a>
+</p>
+
+POC for the validation of github actions in a project with svelte-kit, docker and k8s.
+
+## About Svelte
+
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
 
 ## Developing
 
