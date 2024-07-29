@@ -51,7 +51,7 @@ jobs:
       uses: martinbeentjes/npm-get-version-action@v1.3.1
       env:
         CURRENT_VERSION: ${{ steps.version-bump.outputs.new_tag }}
-      run: echo "Current Version: $CURRENT_VERSION"
+      run: echo "Current Version: "
 
         #- name: Update Version in Deployment and Readme
         #env:
