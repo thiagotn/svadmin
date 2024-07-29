@@ -42,8 +42,10 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Show the new version
+      env:
+        NEW_VERSION: ${{ steps.version-bump.outputs.new_tag }}
       run: |
-        echo "The new version is ${{ steps.version-bump.outputs.new_tag }}"
+        echo "The new version is $NEW_VERSION"
 
     - name: Get Project Version
       id: package-version
