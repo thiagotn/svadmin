@@ -51,7 +51,7 @@ jobs:
       run: |
         echo "The new version is $NEW_VERSION"
         echo "Update deployment.yaml"
-        sed -i'' "/svdadmin:/s/[[:digit:]].[[:digit:]].[[:digit:]]*/$NEW_VERSION/" ".kubernetes/production/deployment.yaml"
+        sed -i'' "/svadmin:/s/[[:digit:]].[[:digit:]].[[:digit:]]*/$NEW_VERSION/" ".kubernetes/production/deployment.yaml"
         echo "Update README.md"
         sed -i'' "/production-/s/[[:digit:]].[[:digit:]].[[:digit:]]*/$NEW_VERSION/" "README.md"
         echo "grep deployment.yaml" 
