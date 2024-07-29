@@ -45,5 +45,5 @@ You can preview the production build with `npm run preview`.
 | 2 | Docker Image/Push  | ✓ |
 | 3 | [Teams notification](https://github.com/marketplace/actions/notify-microsoft-teams)  |  TODO |
 | 4 | Docker Image, update version (from 0.0.1 to 0.0.2) | ✓ |
-| 5 | Other | TODO | 
-| 4 | Docker Image, update version (from 0.0.1 to 0.0.2)  |   |  
+| 5 | Update files that uses app version | TODO | 
+  
