@@ -2,7 +2,7 @@
 
 <p align="left">
   <a href="https://svadmin.io">
-    <img alt="Current version badge" src="https://shields.io/badge/production-0.0.19-green">
+    <img alt="Current version badge" src="https://shields.io/badge/production-0.0.20-green">
   </a>
 </p>
 
