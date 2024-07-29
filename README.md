@@ -8,6 +8,17 @@
 
 POC for the validation of github actions in a project with svelte-kit, docker and k8s.
 
+## TODO list
+
+| Id | Item  | Status  |
+|---|---|---|
+| 1 | Pipeline Github Actions  | ✓ |
+| 2 | Docker Image/Push  | ✓ |
+| 3 | Docker Image, update version (from 0.0.1 to 0.0.2) | ✓ |
+| 4 | Update files that uses app version | ✓ |
+| 5 | Call ArgoCD to start delivery |  TODO |
+| 6 | [Teams notification](https://github.com/marketplace/actions/notify-microsoft-teams)  |  TODO |
+
 ## About Svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
@@ -35,14 +46,5 @@ You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
 
-## TODO
 
-| Id | Item  | Status  |
-|---|---|---|
-| 1 | Pipeline Github Actions  | ✓ |
-| 2 | Docker Image/Push  | ✓ |
-| 3 | Docker Image, update version (from 0.0.1 to 0.0.2) | ✓ |
-| 4 | Update files that uses app version | ✓ |
-| 5 | Call ArgoCD to start delivery |  TODO |
-| 6 | [Teams notification](https://github.com/marketplace/actions/notify-microsoft-teams)  |  TODO |
   
