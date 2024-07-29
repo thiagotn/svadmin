@@ -41,7 +41,8 @@ You can preview the production build with `npm run preview`.
 |---|---|---|
 | 1 | Pipeline Github Actions  | ✓ |
 | 2 | Docker Image/Push  | ✓ |
-| 3 | [Teams notification](https://github.com/marketplace/actions/notify-microsoft-teams)  |  TODO |
-| 4 | Docker Image, update version (from 0.0.1 to 0.0.2) | ✓ |
-| 5 | Update files that uses app version | TODO | 
+| 3 | Docker Image, update version (from 0.0.1 to 0.0.2) | ✓ |
+| 4 | Update files that uses app version | ✓ |
+| 5 | Call ArgoCD to start delivery |  TODO |
+| 6 | [Teams notification](https://github.com/marketplace/actions/notify-microsoft-teams)  |  TODO |
   
