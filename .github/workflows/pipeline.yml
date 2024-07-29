@@ -58,8 +58,9 @@ jobs:
         grep 'svdadmin:' .kubernetes/production/deployment.yaml || true
         echo "grep README.md"
         grep 'production-' README.md || true
-        git status
         git add . 
+        git commit -m "Bump version (README.md and deployment.yaml) to $NEW_VERSION"
+        git push
 
     - name: Login to Docker Hub
       uses: docker/login-action@v3
