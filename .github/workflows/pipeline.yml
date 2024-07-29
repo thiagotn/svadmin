@@ -55,11 +55,11 @@ jobs:
         echo "Update README.md"
         sed -i'' "/production-/s/[[:digit:]].[[:digit:]].[[:digit:]]*/$NEW_VERSION/" "README.md"
         echo "grep deployment.yaml" 
-        grep 'svdadmin:' .kubernetes/production/deployment.yaml
+        grep 'svdadmin:' .kubernetes/production/deployment.yaml || true
         echo "grep README.md"
-        grep 'production-' README.md
+        grep 'production-' README.md || true
         git status
-        #git add . 
+        git add . 
 
     - name: Login to Docker Hub
       uses: docker/login-action@v3
