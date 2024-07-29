@@ -53,7 +53,7 @@ jobs:
     - name: Echo Current Version
       env:
         CURRENT_VERSION: ${{ steps.version-bump.outputs.new_tag }}
-      run: echo "Current Version: "
+    - run: echo "Current Version: "
 
     #- name: Update Version in Deployment and Readme
     #env:
