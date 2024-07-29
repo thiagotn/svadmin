@@ -1,4 +1,4 @@
-# create-svelte
+# svadmin
 
 <p align="left">
   <a href="https://svadmin.io">
@@ -6,7 +6,7 @@
   </a>
 </p>
 
-POC for the validation of github actions in a project with svelte-kit, docker and k8s.
+POC for the validation of github actions in a project with svelte-kit, docker and k8s resources.
 
 ## TODO list
 
