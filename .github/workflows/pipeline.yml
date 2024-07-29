@@ -51,6 +51,7 @@ jobs:
       uses: martinbeentjes/npm-get-version-action@v1.3.1
       env:
         CURRENT_VERSION: ${{ steps.package-version.outputs.current-version }}
+    - name: Update Deployment and README
       run: echo "teste"
         #run: echo "Current Version: $CURRENT_VERSION"
         #run: sed -i'' "/svdadmin:/s/[[:digit:]].[[:digit:]].[[:digit:]]*/$CURRENT_VERSION/" ".kubernetes/production/deployment.yaml"
