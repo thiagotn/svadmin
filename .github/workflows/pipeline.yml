@@ -41,6 +41,8 @@ jobs:
         tag-prefix: 'v'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        echo "The new version is ${{ steps.version-bump.outputs.new_tag }}"
 
     - name: Get Project Version
       id: package-version
