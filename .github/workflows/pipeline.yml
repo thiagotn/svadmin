@@ -33,7 +33,10 @@ jobs:
       run: npx playwright install --with-deps
     - run: npm run build --if-present
     - run: npm test
-   
+    - run: |
+        sed -i'' "/svdadmin:/s/[[:digit:]].[[:digit:]].[[:digit:]]*/${{steps.package-version.outputs.current-version}}/" ".kubernetes/production/deployment.yaml"
+        sed -i'' "/production-/s/[[:digit:]].[[:digit:]].[[:digit:]]*/${{steps.package-version.outputs.current-version}}/" "README.md"
+
     - name: 'Automated Version Bump'
       id: version-bump
       uses: 'phips28/gh-action-bump-version@master'

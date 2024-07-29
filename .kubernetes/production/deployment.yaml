@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: svadmin
+  namespace: test
+  labels:
+    name: svadmin
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svadmin
+  template:
+    metadata:
+      labels:
+        name: svadmin
+    spec:
+      affinity:
+        podAntiAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            - labelSelector:
+                matchExpressions:
+                  - key: name
+                    operator: In
+                    values:
+                      - svadmin
+              topologyKey: kubernetes.io/hostname
+      containers:
+      - name: svadmin
+        image: thiagotn/svadmin:0.0.5
+        resources:
+          limits:
+            cpu: 200m
+            memory: 100Mi
+          requests:
+            cpu: 100m
+            memory: 32Mi
+        ports:
+        - containerPort: 8080
+          name: in
+          protocol: TCP
+
