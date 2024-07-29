@@ -33,8 +33,15 @@ jobs:
       run: npx playwright install --with-deps
     - run: npm run build --if-present
     - run: npm test
-    - run: npm version patch
-    
+   
+    - name: 'Automated Version Bump'
+      id: version-bump
+      uses: 'phips28/gh-action-bump-version@master'
+      with:
+        tag-prefix: 'v'
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
     - name: Get Project Version
       id: package-version
       uses: martinbeentjes/npm-get-version-action@v1.3.1
