@@ -6,7 +6,7 @@
   </a>
 </p>
 
-POC for the validation of github actions in a project with svelte-kit, docker and k8s resources.
+POC for the validation of github actions in a project with svelte-kit, docker and Kubernetes resources.
 
 ## TODO list
 
