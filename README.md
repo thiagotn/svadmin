@@ -47,4 +47,23 @@ You can preview the production build with `npm run preview`.
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
 
 
+## Docker
+
+### Build Image
+
+To build a docker image:
+
+```bash
+docker build -t svadmin .
+```
+
+### Run Image
+
+To run the image:
+
+```bash
+docker run -p 3000:3000 svadmin
+```
+
+
   
