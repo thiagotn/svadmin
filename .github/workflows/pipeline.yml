@@ -78,4 +78,4 @@ jobs:
       uses: docker/build-push-action@v6
       with:
         push: true
-        tags: ${{ secrets.DOCKERHUB_USERNAME }}/svadmin:${{ steps.package-version.outputs.current-version}}
+        tags: ${{ secrets.DOCKERHUB_USERNAME }}/svadmin:${{ NEW_VERSION }}
