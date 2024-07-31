@@ -35,7 +35,6 @@ jobs:
     - run: npm test
 
     - name: Version Bump
-      with:
       run: |
         echo "Current Version"
         npm pkg get version
