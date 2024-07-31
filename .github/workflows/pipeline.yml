@@ -34,20 +34,21 @@ jobs:
     - run: npm run build --if-present
     - run: npm test
 
-    - name: Automated Version Bump
-      id: version-bump
-      uses: 'phips28/gh-action-bump-version@master'
-      with:
-        tag-prefix: 'v'
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Version Bump
+      run: |
+        echo "Current Version"
+        npm pkg get version
+        echo "Bump Version"
+        npm version patch
+        git push --follow-tags
+        echo "New Version"
+        npm pkg get version
 
-    - name: Get Project Version
-      id: package-version
-      uses: martinbeentjes/npm-get-version-action@v1.3.1
-    - name: Show the current version
-      env:
-        NEW_VERSION: ${{ steps.package-version.outputs.current-version }}
+    - name: Set NEW_VERSION environment variable
+      id: set_version
+      run: echo "NEW_VERSION=$(npm pkg get version | tr -d '\"')" >> $GITHUB_ENV
+
+    - name: Update Resources with New Version
       run: |
         echo "The new version is $NEW_VERSION"
         echo "Update deployment.yaml"
