@@ -27,7 +27,7 @@ spec:
               topologyKey: kubernetes.io/hostname
       containers:
       - name: svadmin
-        image: thiagotn/svadmin:0.0.24
+        image: thiagotn/svadmin:0.0.25
         resources:
           limits:
             cpu: 200m
