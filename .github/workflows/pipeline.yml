@@ -35,10 +35,13 @@ jobs:
     - run: npm test
 
     - name: Version Bump
+      with:
       run: |
         echo "Current Version"
         npm pkg get version
         echo "Bump Version"
+        git config --global user.email "thiagotn@gmail.com"
+        git config --global user.name "Thiago Nogueira"
         npm version patch
         git push --follow-tags
         echo "New Version"
