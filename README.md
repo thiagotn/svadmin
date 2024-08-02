@@ -19,7 +19,7 @@ POC for the validation of github actions in a project with svelte-kit, docker an
 | 5 | Call ArgoCD to start delivery |  TODO |
 | 6 | [Teams notification](https://github.com/marketplace/actions/notify-microsoft-teams)  |  TODO |
 
-## About Svelte
+## About Svelte.
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
 
